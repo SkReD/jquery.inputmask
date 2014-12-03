@@ -22,7 +22,8 @@ module.exports = function (grunt) {
             };
         }
 
-        srcFiles = grunt.file.expand(path + "/*.extensions.js");
+		srcFiles = [];
+        srcFiles = grunt.file.expand(path + "/jquery.inputmask.date.extensions.js");
         srcFiles.splice(0, 0, "js/jquery.inputmask.js");
         uglifyConfig["inputmaskbundle"] = {
             files: {
